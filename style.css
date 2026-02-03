@@ -1,0 +1,117 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: rgb(106, 0, 32);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.wrapper {
+    max-width: 700px;
+    width: 100%;
+    padding: 1rem;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.gif {
+    display: block;
+    width: auto;
+    max-width: 600px;
+    height: auto;
+    margin: 0 auto;
+}
+
+h2 {
+    text-align: center;
+    font-size: 1.5em;
+    color: #FFBDC5;
+    margin: 15px 0;
+}
+
+/* Inline question text (created dynamically) */
+.question {
+    text-align: center;
+    font-size: 1.25rem;
+    color: #FFBDC5;
+    margin: 0 0 12px 0;
+}
+
+.btn-group {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.love {
+    color: rgb(239, 232, 232);
+}
+
+/* Styles shared by hi (custom design) */
+.hi-button {
+    outline: none;
+    color: rgb(106, 0, 32);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2em;
+    text-align: center;
+    padding-left: 5em;
+    padding-right: 5em;
+    font-size: 20px;
+    border: 2px dashed rgb(106, 0, 32);
+    border-radius: 15px;
+    background-color: #FFBDC5;
+    box-shadow: 0 0 0 4px #f8cad0, 2px 2px 4px 2px rgba(0, 0, 0, 0.5);
+    transition: .1s ease-in-out, .4s color;
+}
+
+.hi-button:active,
+.yes-btn:active,
+.no-btn:active {
+    transform: translateX(0.1em) translateY(0.1em);
+    box-shadow: 0 0 0 4px #EADDCA, 1.5px 1.5px 2.5px 1.5px rgba(0, 0, 0, 0.5);
+}
+
+.btn-group {
+    gap: 1rem;
+}
+
+/* Active scale for buttons using .button class */
+.button:active {
+    transform: scale(1.01);
+}
+
+.yes-btn,
+.no-btn {
+    position: absolute;
+    outline: none;
+    color: rgb(106, 0, 32);
+    padding: 2em;
+    font-size: 20px;
+    padding-left: 5em;
+    padding-right: 5em;
+    border: 2px dashed rgb(106, 0, 32);
+    border-radius: 15px;
+    background-color: #FFBDC5;
+    box-shadow: 0 0 0 4px #f8cad0, 2px 2px 4px 2px rgba(0, 0, 0, 0.5);
+    transition: .1s ease-in-out, .4s color;
+}
+
+/* apply offsets specifically to yes/no buttons */
+.no-btn {
+    margin-right: -300px;
+}
+
+.yes-btn {
+    margin-left: -300px;
+}
